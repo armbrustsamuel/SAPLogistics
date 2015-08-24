@@ -1,0 +1,1 @@
+sap.ui.define("openui5/googlemaps/Animation",["jquery.sap.global"],function(e){"use strict";var i={BOUNCE:1,DROP:2,k:3,j:4};return i},!0);

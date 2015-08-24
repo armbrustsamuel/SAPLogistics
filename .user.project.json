@@ -1,0 +1,75 @@
+{
+  "run": [
+    {
+      "filePath": "/Logistics_Fiori/index.html",
+      "previewMode": 0,
+      "dataMode": 1,
+      "workspace": "withoutWorkspace",
+      "ui5ActiveVersion": null,
+      "ui5VerSource": null,
+      "isDefaultVersion": 0,
+      "urlParameters": [],
+      "_metadata": {
+        "runnerId": "webapprunner",
+        "id": 9020402,
+        "displayName": "New Web Application 4"
+      }
+    },
+    {
+      "filePath": "/Logistics_Fiori/Component.js",
+      "previewMode": 0,
+      "dataMode": 1,
+      "workspace": "withoutWorkspace",
+      "ui5ActiveVersion": null,
+      "ui5VerSource": null,
+      "isDefaultVersion": 0,
+      "urlParameters": [],
+      "hashParameter": "",
+      "_metadata": {
+        "runnerId": "fiorirunner",
+        "id": 4017064,
+        "displayName": "New SAP Fiori Component on Sandbox"
+      }
+    },
+    {
+      "filePath": "/project_ar_1/index.html",
+      "previewMode": 0,
+      "dataMode": 1,
+      "workspace": "withoutWorkspace",
+      "urlParameters": [],
+      "_metadata": {
+        "runnerId": "webapprunner",
+        "id": 6122959,
+        "displayName": "New Web Application 3"
+      }
+    },
+    {
+      "filePath": "/newFunctions/index.html",
+      "previewMode": 0,
+      "dataMode": 1,
+      "workspace": "withoutWorkspace",
+      "ui5ActiveVersion": null,
+      "isDefaultVersion": 0,
+      "urlParameters": [],
+      "_metadata": {
+        "runnerId": "webapprunner",
+        "id": 8264053,
+        "displayName": "New Web Application 2"
+      }
+    },
+    {
+      "filePath": "/newFunctions/Component.js",
+      "previewMode": 0,
+      "dataMode": 1,
+      "workspace": "withoutWorkspace",
+      "ui5ActiveVersion": null,
+      "isDefaultVersion": 0,
+      "urlParameters": [],
+      "_metadata": {
+        "runnerId": "fiorirunner",
+        "id": 6462276,
+        "displayName": "New SAP Fiori Component 1"
+      }
+    }
+  ]
+}

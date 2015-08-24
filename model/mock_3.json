@@ -1,0 +1,131 @@
+{
+"d": {
+"results": [
+{
+"__metadata": {
+"id": "https://logisticswebappi843655trial.hanatrial.ondemand.com:443/LogisticsWebApp/LogisticsOData.svc/TripDatas(3)",
+"uri": "https://logisticswebappi843655trial.hanatrial.ondemand.com:443/LogisticsWebApp/LogisticsOData.svc/TripDatas(3)",
+"type": "logistics.TripData"
+},
+"DateTime": null,
+"EngineLoad": "0",
+"EngineRPM": "0",
+"FuelLevel": "0",
+"Id": 3,
+"Speed": "0",
+"Temperature": "0",
+"Trip": 4,
+"lat": -29.649899,
+"lng": -51.143627,
+"X": "5304",
+"Y": "5304",
+"Z": "5304",
+"TripDetails": {
+"__deferred": {
+"uri": "https://logisticswebappi843655trial.hanatrial.ondemand.com:443/LogisticsWebApp/LogisticsOData.svc/TripDatas(3)/TripDetails"
+}
+}
+},
+{
+"__metadata": {
+"id": "https://logisticswebappi843655trial.hanatrial.ondemand.com:443/LogisticsWebApp/LogisticsOData.svc/TripDatas(7)",
+"uri": "https://logisticswebappi843655trial.hanatrial.ondemand.com:443/LogisticsWebApp/LogisticsOData.svc/TripDatas(7)",
+"type": "logistics.TripData"
+},
+"DateTime": null,
+"EngineLoad": "0",
+"EngineRPM": "0",
+"FuelLevel": "0",
+"Id": 7,
+"Speed": "0",
+"Temperature": "0",
+"Trip": 6,
+"lat": -29.648799,
+"lng": -51.164627,
+"X": "5304",
+"Y": "5304",
+"Z": "5304",
+"TripDetails": {
+"__deferred": {
+"uri": "https://logisticswebappi843655trial.hanatrial.ondemand.com:443/LogisticsWebApp/LogisticsOData.svc/TripDatas(7)/TripDetails"
+}
+}
+},
+{
+"__metadata": {
+"id": "https://logisticswebappi843655trial.hanatrial.ondemand.com:443/LogisticsWebApp/LogisticsOData.svc/TripDatas(5)",
+"uri": "https://logisticswebappi843655trial.hanatrial.ondemand.com:443/LogisticsWebApp/LogisticsOData.svc/TripDatas(5)",
+"type": "logistics.TripData"
+},
+"DateTime": null,
+"EngineLoad": "0",
+"EngineRPM": "0",
+"FuelLevel": "0",
+"Id": 5,
+"Speed": "0",
+"Temperature": "0",
+"Trip": 6,
+"lat": -29.642899,
+"lng": -51.145627,
+"X": "5304",
+"Y": "5304",
+"Z": "5304",
+"TripDetails": {
+"__deferred": {
+"uri": "https://logisticswebappi843655trial.hanatrial.ondemand.com:443/LogisticsWebApp/LogisticsOData.svc/TripDatas(5)/TripDetails"
+}
+}
+},
+{
+"__metadata": {
+"id": "https://logisticswebappi843655trial.hanatrial.ondemand.com:443/LogisticsWebApp/LogisticsOData.svc/TripDatas(7)",
+"uri": "https://logisticswebappi843655trial.hanatrial.ondemand.com:443/LogisticsWebApp/LogisticsOData.svc/TripDatas(7)",
+"type": "logistics.TripData"
+},
+"DateTime": null,
+"EngineLoad": "0",
+"EngineRPM": "0",
+"FuelLevel": "0",
+"Id": 7,
+"Speed": "0",
+"Temperature": "0",
+"Trip": 7,
+"lat": -29.648699,
+"lng": -51.164427,
+"X": "5304",
+"Y": "5304",
+"Z": "5304",
+"TripDetails": {
+"__deferred": {
+"uri": "https://logisticswebappi843655trial.hanatrial.ondemand.com:443/LogisticsWebApp/LogisticsOData.svc/TripDatas(7)/TripDetails"
+}
+}
+},
+{
+"__metadata": {
+"id": "https://logisticswebappi843655trial.hanatrial.ondemand.com:443/LogisticsWebApp/LogisticsOData.svc/TripDatas(7)",
+"uri": "https://logisticswebappi843655trial.hanatrial.ondemand.com:443/LogisticsWebApp/LogisticsOData.svc/TripDatas(7)",
+"type": "logistics.TripData"
+},
+"DateTime": null,
+"EngineLoad": "0",
+"EngineRPM": "0",
+"FuelLevel": "0",
+"Id": 7,
+"Speed": "0",
+"Temperature": "0",
+"Trip": 8,
+"lat": -29.648499,
+"lng": -51.164227,
+"X": "5304",
+"Y": "5304",
+"Z": "5304",
+"TripDetails": {
+"__deferred": {
+"uri": "https://logisticswebappi843655trial.hanatrial.ondemand.com:443/LogisticsWebApp/LogisticsOData.svc/TripDatas(7)/TripDetails"
+}
+}
+}
+]
+}
+}

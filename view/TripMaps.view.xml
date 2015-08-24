@@ -1,0 +1,79 @@
+<core:View xmlns:core="sap.ui.core" 
+	xmlns:mvc="sap.ui.core.mvc" 
+	xmlns="sap.m" controllerName="demo.view.TripMaps" 
+	xmlns:gmaps="openui5.googlemaps"
+	xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:l="controls"
+	xmlns:m="sap.ui.layout">
+	<Page
+		enableScrolling="true"
+		id="page1"
+		title="{i18n>TripMapsTitle}"
+		showNavButton="true"
+		navButtonPress="handleNavButtonPress" >
+		<content>
+			<!--<Button id="oActualLocation"-->
+			<!--			text="Current Location"-->
+			<!--			type="Default"-->
+			<!--			width="200px"-->
+			<!--			enabled="true"-->
+			<!--			icon="http://www.w3schools.com/googleapi/pinkball.png"-->
+			<!--			iconFirst="true"-->
+			<!--			press="getMyLocation"/>-->
+			
+			 <VBox xmlns="sap.m"
+			 	id="id"
+			 	height=""
+			 	width=""
+			 	displayInline="false"
+			 	fitContainer="false"
+			 	renderType="Div"
+			 	justifyContent="Center"
+			 	alignItems="Center">
+                <items>
+					<gmaps:Map id="map1" height="500px" width="750px" class="googleMap" markers="{/d/results}" 
+					click="setLocation" ready="onMapReady" zoom="12" lat="-29.649899" lng="-51.143627">  
+				        <gmaps:markers>  
+				            <!--<gmaps:Marker lat="{gps/lat}" lng="{gps/lng}" animation="2" />-->
+				            <gmaps:Marker lat="{lat}" lng="{lng}"  animation="2" />
+				            <!--info="{name}"-->
+				        </gmaps:markers>  
+				    </gmaps:Map> 
+				    
+				    <!--<l:C3Chart id="chart1" class="c3Chart" height="300px" width="710px" columns="{cols}"></l:C3Chart>-->
+		    	</items>
+		    </VBox>
+			<List id="List"
+				items="{/d/results}" >
+			<StandardListItem 
+				visible="true"
+				unread="false"
+				selected="false"
+				description="{/lat /lng}"
+				icon="sap-icon://map"
+				iconInset="true"
+				iconDensityAware="true"
+				infoState="None"
+				adaptTitleSize="true"
+				titleTextDirection="Inherit"
+				infoTextDirection="Inherit"
+				tap=""
+				detailTap=""
+				detailPress=""
+				type="Active"
+				press="handleIconTabBarSelect"
+				title="{Trip}" />
+			</List>
+		</content>
+		<footer>
+            <Bar>
+                <contentRight>
+                    <Label text="Show Polylines: " />
+                    <Switch change="onShowPolyline" state="false" />
+                    <Label text="Show Polygon: " />
+                    <Switch change="onShowPolygon" state="false" />
+                </contentRight>
+            </Bar>
+        </footer>
+	</Page>
+</core:View>

@@ -1,0 +1,35 @@
+<core:View 
+    controllerName="demo.view.TripMaster"
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+    xmlns:core="sap.ui.core">
+   
+    <Page 
+        title="{i18n>TripMaster}"
+        showNavButton="true"
+		navButtonPress="handleNavButtonPress"
+		>
+		<List
+			id="List1"
+			items="{/d/results}" >
+			<StandardListItem 
+				visible="true"
+				unread="false"
+				selected="false"
+				description="{/lat /lng}"
+				icon="sap-icon://map-2"
+				iconInset="true"
+				iconDensityAware="true"
+				infoState="None"
+				adaptTitleSize="true"
+				titleTextDirection="Inherit"
+				infoTextDirection="Inherit"
+				tap=""
+				detailTap=""
+				detailPress=""
+				type="Active"
+				press="handleIconTabBarSelect"
+				title="{Trip}" />
+			</List>
+    </Page>
+</core:View>

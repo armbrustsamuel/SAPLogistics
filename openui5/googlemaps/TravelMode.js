@@ -1,0 +1,1 @@
+sap.ui.define("openui5/googlemaps/TravelMode",["jquery.sap.global"],function(i){"use strict";var e={driving:"DRIVING",walking:"WALKING",bicycling:"BICYCLING",transit:"TRANSIT"};return e},!0);

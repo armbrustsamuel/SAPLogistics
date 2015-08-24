@@ -1,0 +1,48 @@
+{
+	"TileCollection" : [{
+	      "DetailView" : "Speed",
+	      "icon" : "sap-icon://unwired",
+	      "number" : "120",
+	      "numberUnit" : "km/h",
+	      "type" : "Monitor",
+	      "title" : "TripMaps",
+	      "info" : "Normal",
+	      "infoState" : "Success"
+	}],
+	"TripData": [{
+		"id":"",
+		"accelerometer": {
+			"xAxis": 5274,
+			"yAxis": 5274,
+			"zAxis": 5274
+		},
+		"gps": {
+			"lat": -29.649899,
+			"lng": -51.143627
+		},
+		"obd2": {
+			"engineRPM": 784.75,
+			"temperature": 72,
+			"speed": 0,
+			"engineLoad":"16.08"
+		}
+	},
+	{
+		"id":"",
+		"accelerometer": {
+			"xAxis": 5274,
+			"yAxis": 5274,
+			"zAxis": 5274
+		},
+		"gps": {
+			"lat": -29.659899,
+			"lng": -51.153627
+		},
+		"obd2": {
+			"engineRPM": 784.75,
+			"temperature": 72,
+			"speed": 0,
+			"engineLoad":"16.08"
+		}
+	}]
+}

@@ -1,0 +1,74 @@
+{
+"book": [
+{
+"Item Category": "SAP Ltda Late Shift",
+"City": "São Leopoldo",
+"Profit": 173793.31,
+"Unit Price": 1240.79,
+"Units Available": 17336,
+"Cost": 295584.81,
+"Revenue": 469378.12,
+"Units Sold": 5757
+},
+{
+"Item Category": "SAP Ltda Employee",
+"City": "Porto Alegre",
+"Profit": 65834.05,
+"Unit Price": 604.23,
+"Units Available": 9127,
+"Cost": 118669.9,
+"Revenue": 184503.95,
+"Units Sold": 3831
+},
+{
+"Item Category": "La Salle Colleage",
+"City": "Canoas",
+"Profit": 145964.04,
+"Unit Price": 1805.66,
+"Units Available": 22965,
+"Cost": 310458.64,
+"Revenue": 456422.68,
+"Units Sold": 7744
+},
+{
+"Item Category": "SAP Week of service",
+"City": "São Leopoldo",
+"Profit": 140874.87,
+"Unit Price": 1319.07,
+"Units Available": 11270,
+"Cost": 215065.45,
+"Revenue": 355940.33,
+"Units Sold": 4855
+},
+{
+"Item Category": "Unisinos High School",
+"City": "São Leopoldo",
+"Profit": 43805.56,
+"Unit Price": 489.84,
+"Units Available": 7730,
+"Cost": 79293.14,
+"Revenue": 123098.7,
+"Units Sold": 3168
+},
+{
+"Item Category": "Alternative Routes",
+"City": "Porto Alegre",
+"Profit": 121617.45,
+"Unit Price": 1234.32,
+"Units Available": 15014,
+"Cost": 200163.36,
+"Revenue": 321780.81,
+"Units Sold": 5778
+},
+{
+"Item Category": "Ulbra High School",
+"City": "Canoas",
+"Profit": 56994.34,
+"Unit Price": 763.21,
+"Units Available": 11248,
+"Cost": 115132.04,
+"Revenue": 172126.37,
+"Units Sold": 3730
+}
+]
+}
