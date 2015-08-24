@@ -23,7 +23,6 @@ sap.ui.controller("demo.view.TripMaps", {
     },
 
     handleNavButtonPress : function (evt) {
-    	var haha;
     	var filters=[];
 		var list = this.getView().byId("List");
 		var map = this.getView().byId("map1");
