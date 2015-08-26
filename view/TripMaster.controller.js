@@ -29,17 +29,7 @@ sap.ui.core.mvc.Controller.extend("demo.view.TripMaster", {
 		var query = evt.getSource().getProperty('title');
 		console.log(query);
 		if (query && query.length > 0) {
-		
-		    if(query == "4" )
-		    {
-		       sFilter = new sap.ui.model.Filter("Trip", sap.ui.model.FilterOperator.EQ, query);
-		    }
-		    else if(query == "6")
-		    {
-		       sFilter = new sap.ui.model.Filter("Trip", sap.ui.model.FilterOperator.EQ, query);
-		    }
-		     //and so on...
-		
+			sFilter = new sap.ui.model.Filter("Trip", sap.ui.model.FilterOperator.EQ, query);
 		    filters.push(sFilter);
 		}
 		

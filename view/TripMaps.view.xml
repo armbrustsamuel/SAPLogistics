@@ -20,7 +20,6 @@
 			<!--			icon="http://www.w3schools.com/googleapi/pinkball.png"-->
 			<!--			iconFirst="true"-->
 			<!--			press="getMyLocation"/>-->
-			
 			 <VBox xmlns="sap.m"
 			 	id="id"
 			 	height=""
@@ -32,17 +31,20 @@
 			 	alignItems="Center">
                 <items>
 					<gmaps:Map id="map1" height="500px" width="750px" class="googleMap" markers="{/d/results}" 
-					click="setLocation" ready="onMapReady" zoom="12" lat="-29.649899" lng="-51.143627">  
+					click="setLocation" ready="onMapReady" zoom="12" lat="-33.890542" lng="151.274856">  
 				        <gmaps:markers>  
 				            <!--<gmaps:Marker lat="{gps/lat}" lng="{gps/lng}" animation="2" />-->
-				            <gmaps:Marker lat="{lat}" lng="{lng}"  animation="2" />
+				            <gmaps:Marker lat="{Latitude}" lng="{Longitude}"  animation="2" />
 				            <!--info="{name}"-->
 				        </gmaps:markers>  
 				    </gmaps:Map> 
-				    
 				    <!--<l:C3Chart id="chart1" class="c3Chart" height="300px" width="710px" columns="{cols}"></l:C3Chart>-->
 		    	</items>
 		    </VBox>
+		    <Button 
+		    	text="Button"
+		    	press="handleButton">
+		    </Button>
 			<List id="List"
 				items="{/d/results}" >
 			<StandardListItem 

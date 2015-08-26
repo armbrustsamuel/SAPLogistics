@@ -31,9 +31,9 @@ sap.ui.core.UIComponent.extend("demo.Component", {
 //		oView.setModel(oModel);
 
 		// Using a local model for offline development
-		//var oData = "https://logisticswebappi843655trial.hanatrial.ondemand.com/LogisticsWebApp/LogisticsOData.svc/TripDatas?%24format=json";
-		var oModel = new sap.ui.model.json.JSONModel("model/mock_3.json");
-		//var oModel = new sap.ui.model.json.JSONModel(oData);
+		var oData = "https://logisticswebappi843655trial.hanatrial.ondemand.com/LogisticsWebApp/LogisticsOData.svc/TripDatas?%24format=json";
+		//var oModel = new sap.ui.model.json.JSONModel("model/mock_3.json");
+		var oModel = new sap.ui.model.json.JSONModel(oData);
 		oView.setModel(oModel);
 		
 	    var i18nModel = new sap.ui.model.resource.ResourceModel({

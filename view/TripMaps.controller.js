@@ -32,6 +32,63 @@ sap.ui.controller("demo.view.TripMaps", {
 		binding.filter(filters);
 		this.nav.back("Master");
 	},
+	
+	handleButton : function (evt) {
+		// sap.ui.getCore().loadLibrary("openui5.googlemaps", "../openui5/googlemaps/");
+		// var places = [{
+		//     name: "Bondi Beach",
+		//     lat: -33.890542,
+		//     lng: 151.274856,
+		//     start: 'Manly',
+		//     end: 'Cronulla'
+		// }];
+		// var oModel = new sap.ui.model.json.JSONModel();
+		// oModel.setData({
+		//     places: places
+		// });
+		// sap.ui.getCore().setModel(oModel);
+		// var oContext = oModel.getContext('/places/0/');
+		// var params = {
+		//     url: 'https://maps.googleapis.com/maps/api/js',
+		//     sensor: false,
+		//     v: '3.exp'
+		//         // libraries : 'places'
+		// };
+		// openui5.googlemaps.ScriptsUtil.setParams(params);
+		// var directions = new openui5.googlemaps.Directions({
+		//     startAddress: '{start}',
+		//     endAddress: '{end}',
+		//     travelMode: openui5.googlemaps.TravelMode.transit
+		// });
+		// // var myMap = new openui5.googlemaps.Map("map1", {
+		// //     lat: -33.89,
+		// //     lng: 151.27,
+		// //     zoom: 7,
+		// //     zoomControl: true,
+		// //     directions: directions
+		// // }).placeAt("map").setBindingContext(oContext);
+		
+		// var map = this.getView().byId("map1");
+		// map.directions = directions;
+		// map.setBindingContext(oContext);
+		
+		var oMarkers = new openui5.googlemaps.Marker({
+		    lat: '-51.43243242',
+		    lng: '-29.3453463',
+		    info: 'casa',
+		    icon: '{http://www.w3schools.com/googleapi/pinkball.png}', //'{http://www.w3schools.com/googleapi/pinkball.png}',
+		});
+		
+		var map = this.getView().byId("map1");
+		openui5.googlemaps.MapUtils.currentPosition(function(position) {
+            map.setLat(position.lat);
+            map.setLng(position.lng);
+            map.setZoom(13);
+        });
+        
+        map.markers = oMarkers;
+		
+	},
 
     onMapReady: function(oEvent) {
         if (this.selectedLocation === undefined) {
@@ -42,7 +99,6 @@ sap.ui.controller("demo.view.TripMaps", {
             this.setupPolylines();
             this.setupPolygons();
         }
-        //this.setLocation();
     },
 
     setLocation: function(bPublish) {
@@ -52,16 +108,6 @@ sap.ui.controller("demo.view.TripMaps", {
             location: this.selectedLocation
         });
     },
-    
-      //infoWindow.setPosition(pos);
-      //infoWindow.setContent('Location found.');
-      //map.setCenter(pos);     
-	  //  }, function() {
-	  //    console.log("ERRO");
-	  //  });
-	  //} else {
-	  //  // Browser doesn't support Geolocation
-	  //  console.log("ERRO");
 	  
 	handleIconTabBarSelect: function (evt) {
 		var filters = [];
@@ -72,7 +118,6 @@ sap.ui.controller("demo.view.TripMaps", {
 		if (query && query.length > 0) {
 			
 			sFilter = new sap.ui.model.Filter("Trip", sap.ui.model.FilterOperator.EQ, query);
-		
 		    // if(query == "4" )
 		    // {
 		    //   sFilter = new sap.ui.model.Filter("Trip", sap.ui.model.FilterOperator.EQ, query);
@@ -82,7 +127,6 @@ sap.ui.controller("demo.view.TripMaps", {
 		    //   sFilter = new sap.ui.model.Filter("Trip", sap.ui.model.FilterOperator.EQ, query);
 		    // }
 		     //and so on...
-		
 		    filters.push(sFilter);
 		}
 		
@@ -111,13 +155,7 @@ sap.ui.controller("demo.view.TripMaps", {
     getMyLocation: function(evt) {
     	var map = this.byId("map1");
     	
-		var directions = new openui5.googlemaps.Directions({
-		    startAddress: {lat: -29.3244324, lng: -55.345345},
-		    endAddress: {lat: -29.3264324, lng: -55.3455345},
-		    //travelMode: openui5.googlemaps.TravelMode.driving,
-		    unitSystem: openui5.googlemaps.UnitSystem.IMPERIAL});
-    	
-    	map.directions = directions;
+		
     	//var infoWindow = new google.maps.InfoWindow({map: map});
    		if (navigator.geolocation) {
 	     navigator.geolocation.getCurrentPosition(function(position) {
@@ -144,8 +182,8 @@ sap.ui.controller("demo.view.TripMaps", {
         //this.getView().getModel().getData().places.forEach(function(obj) {
         this.getView().getModel().getData().d.results.forEach(function(obj) {
             aPaths.push({
-                lat: obj.lat,
-                lng: obj.lng
+                lat: obj.Latitude,
+                lng: obj.Longitude
             });
         });
 
